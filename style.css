@@ -81,3 +81,9 @@ body
 	transform: translateZ(-1px) scale(2);
 	
 }
+
+#slide3 {
+	background-color: #ffffff; 
+	z-index: 2;
+	
+}
