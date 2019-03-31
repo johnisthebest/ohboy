@@ -6,3 +6,82 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
+
+.s-m {
+	font-size: 28px;
+	letter-spacing: 10px;
+	position: absolute;
+    	top: 70%;
+    	left: 50%;
+   	-moz-transform: translateX(-50%) translateY(-50%);
+    	-webkit-transform: translateX(-50%) translateY(-50%);
+    	transform: translateX(-50%) translateY(-50%);
+}
+
+
+html
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+body
+
+{
+    
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+
+}
+
+.slide
+
+{
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 25% 10%;
+    position: relative;
+    transform-style: inherit;
+    min-width: 100%;
+}
+
+
+.slide::before
+
+{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slide, .slide::before {
+	background: 50% 50% / cover;
+}
+
+#home:before {
+	background-image:url("https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    	background-size:cover;
+    	transform: translateZ(-1px) scale(2);
+    	min-height: 100%;
+}
+
+#slide1 {
+	background-color: #ffffff; 
+	z-index: 2;
+	
+}
+
+#slide2:before {
+	background-color: #ffffff; 
+	transform: translateZ(-1px) scale(2);
+	
+}
