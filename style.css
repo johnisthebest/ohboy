@@ -47,7 +47,8 @@ body
 {
     box-sizing: border-box;
     min-height: 100%;
-    padding: 25% 10%;
+    padding-top: 20%; 
+    padding-bottom: 10%;
     position: relative;
     transform-style: inherit;
     min-width: 100%;
