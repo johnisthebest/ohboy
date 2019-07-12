@@ -1,21 +1,6 @@
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
+.verylong {
 
-.s-m {
-	font-size: 28px;
-	letter-spacing: 10px;
-	}
-
-html
-{
-    height: 100%;
-    overflow: hidden;
+height: 2000px;
 }
 
 ::-webkit-scrollbar 
@@ -25,76 +10,35 @@ background: transparent;
 }
 
 
-body
-
+.PopupPanel
 {
-    
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background: url("../img/homepage1_bg.png");
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-	
-}
-
-
-
-
-.slide
-
-{
-    box-sizing: border-box;
-    min-height: 100%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    position: relative;
-    transform-style: inherit;
-    min-width: 100%;
-    
-}
-
-
-
-.slide::before
-
-{
-    bottom: 0;
-    content: "";
-    left: 0;
     position: absolute;
-    right: 0;
-    top: 0;
-}
+    left: 50%;
+   top:50%;
+   z-index:1;
 
-.slide, .slide::before {
-	background: 50% 50% / cover;
-}
+margin-left:-297px;
+margin-top:-297px;
+margin-bottom:297px;
 
-#home:before {
-    	background-size:cover;
-    	transform: translateZ(-1px) scale(2);
-    	min-height: 100%;
 }
 
 
-#slide1 {
-	z-index: 2;
-	background-color: #FFFFFF;
+svg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
-#slide2:before {
-	transform: translateZ(-1px) scale(2);
-	background-color: #FFFFFF;
+
+.contact
+{ 
+position:fixed;
+z-index:-1;
 }
 
-#slide3 {
-	z-index: 2;
-	background-color: #FFFFFF;
+
+body {
+background-color:#ffffff;
 }
